@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio_julia/static/css/main.bef887cd.css",
-    "main.js": "/portfolio_julia/static/js/main.e6715429.js",
+    "main.css": "/portfolio_julia/static/css/main.b1930526.css",
+    "main.js": "/portfolio_julia/static/js/main.f8f7d450.js",
     "static/js/453.e00995e3.chunk.js": "/portfolio_julia/static/js/453.e00995e3.chunk.js",
     "static/media/logo.svg": "/portfolio_julia/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/flower.svg": "/portfolio_julia/static/media/flower.9f22ccdf99127221e2f2c2b4dcb2a973.svg",
     "index.html": "/portfolio_julia/index.html",
-    "main.bef887cd.css.map": "/portfolio_julia/static/css/main.bef887cd.css.map",
-    "main.e6715429.js.map": "/portfolio_julia/static/js/main.e6715429.js.map",
+    "main.b1930526.css.map": "/portfolio_julia/static/css/main.b1930526.css.map",
+    "main.f8f7d450.js.map": "/portfolio_julia/static/js/main.f8f7d450.js.map",
     "453.e00995e3.chunk.js.map": "/portfolio_julia/static/js/453.e00995e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bef887cd.css",
-    "static/js/main.e6715429.js"
+    "static/css/main.b1930526.css",
+    "static/js/main.f8f7d450.js"
   ]
 }
