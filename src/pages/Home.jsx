@@ -13,13 +13,13 @@ const featuredProjects = [
     {
         title: "Refonte site e-commerce",
         description: "Amélioration de l’expérience utilisateur et de la conversion.",
-        tech: ["UX Research", "UI Design"],
+        tech: ["UX Research", "UI Design", "Design System"],
         link: "#",
     },
     {
         title: "Dashboard interactif",
         description: "Création d’un tableau de bord intuitif pour la gestion de données.",
-        tech: ["UI Design", "Design System"],
+        tech: ["UX Design", "Design System", "Web App"],
         link: "#",
     },
 ];
@@ -30,7 +30,7 @@ export default function Home() {
             <div className="text-center mt-20">
                 {/* Nom et poste */}
                 <h1 className="text-4xl font-sans italic font-black md:text-6xl ">JULIA CRAPANZANO</h1>
-                <h1 className="text-4xl font-serif italic font-extralight mb-3 md:text-5xl">— UX/UI DESIGNER</h1>
+                <h1 className="text-3xl font-serif italic font-extralight mb-3 md:text-5xl">— UX/UI DESIGNER</h1>
                 <p className="font-sans font-semibold text-md max-w-2xl mx-auto mb-6 md:text-lg">
                     Je conçois des expériences digitales intuitives et esthétiques, centrées sur l’utilisateur.
                     Passionnée par le design fonctionnel et le détail, j’aime transformer les idées en interfaces claires et élégantes.
@@ -55,7 +55,7 @@ export default function Home() {
                 <Flower className="w-8 h-8 animate-spin-slow" />
                 <h2 className="text-2xl md:text-3xl font-serif font-black ">Quelques projets récents</h2>
             </div>
-            <div className="2xl:text-lg px-16 grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center mb-16">
+            <div className="2xl:text-lg px-8 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center mb-16">
                 {featuredProjects.map((p, i) => (
                     <ProjectCard key={i} {...p} />
                 ))}
@@ -64,12 +64,12 @@ export default function Home() {
             {/* CTA Contact */}
             <div className="text-center pt-20">
                 <p className="text-lg font-medium mb-4">✨ Envie de collaborer ou d’échanger ?</p>
-                <div className="flex justify-center gap-6 mb-4">
+                <div className=" flex flex-wrap px-24 justify-center gap-x-6 gap-y-3 mb-4">
                     <a href="mailto:tonemail@example.com" className="text-white hover:underline hover:text-warm">julia.crapanzano@gmail.com</a>
                     <a href="https://www.behance.net/juliacrapanzano1/" className="text-white hover:text-warm">Behance</a>
                     <a href="https://www.linkedin.com/in/juliacrapanzano/" className="text-white hover:text-warm">LinkedIn</a>
                 </div>
-                <p className="text-warm">Entrons en contact 🤝</p>
+                <p className="text-warm pt-4">Entrons en contact 🤝</p>
             </div>
         </div>
     );

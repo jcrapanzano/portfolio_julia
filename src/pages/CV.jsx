@@ -2,10 +2,10 @@ import { ReactComponent as Flower } from '../assets/icons/flower.svg';
 
 export default function CV() {
     return (
-        <div className="max-w-[2400px] bg-warm text-cold font-sans px-14 md:px-24 py-16 pt-32">
+        <div className="max-w-[2400px] bg-warm text-cold font-sans px-12 md:px-24 py-16 pt-32">
 
-            <h1 className="text-5xl md:text-6xl font-black ">JULIA<br />CRAPANZANO</h1>
-            <p className="text-md md:text-lg  px-13 mb-8">
+            <h1 className="text-4xl md:text-6xl font-black ">JULIA<br />CRAPANZANO</h1>
+            <p className="text-md md:text-lg mb-8">
                 {/* UX/UI Designer with a Master's degree in Cognitive Science, with 3 years of experience, including 2 years working on B2C and B2B e-commerce products. Profile combining user-centered design and understanding of web development. */}
                 UX/UI Designer titulaire d'un master en Sciences Cognitives, avec 3 années d'expériences dont 2 ans sur des produits e-commerce b2c et b2b. Profil aliant conception centrée utilisateurs et développement web.
             </p>
