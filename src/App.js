@@ -6,17 +6,19 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import CV from "./pages/CV";
 import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen bg-espresso text-peony">
+    <Router basename='/portfolio_julia'>
+      <div className="flex flex-col min-h-screen bg-cold text-warm">
         <Navbar />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cv" element={<CV />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/project/:id" element={<ProjectDetail />} />
           </Routes>
         </main>
         <Footer />

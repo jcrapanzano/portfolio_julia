@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
+import { ReactComponent as Flower } from '../assets/icons/flower.svg';
+
 
 const featuredProjects = [
     {
@@ -27,45 +29,47 @@ export default function Home() {
         <div className="max-w-[2400px] mx-auto px-6 py-20 ">
             <div className="text-center mt-20">
                 {/* Nom et poste */}
-                <h1 className="text-6xl font-serif font-semibold italic text-primary mb-3">Julia — UX/UI Designer</h1>
-                <p className="font-sans font-semibold text-lg text-peony max-w-2xl mx-auto mb-8">
+                <h1 className="text-4xl font-sans italic font-black md:text-6xl ">JULIA CRAPANZANO</h1>
+                <h1 className="text-4xl font-serif italic font-extralight mb-3 md:text-5xl">— UX/UI DESIGNER</h1>
+                <p className="font-sans font-semibold text-md max-w-2xl mx-auto mb-6 md:text-lg">
                     Je conçois des expériences digitales intuitives et esthétiques, centrées sur l’utilisateur.
                     Passionnée par le design fonctionnel et le détail, j’aime transformer les idées en interfaces claires et élégantes.
                 </p>
 
                 {/* Tags */}
-                <div className="flex justify-center gap-4 mb-10">
-                    <span className="bg-peony text-espresso px-8 py-4 rounded-lg text-sm font-semibold">📍 Nancy, France</span>
-                    <span className="bg-peony text-espresso px-8 py-4 rounded-lg text-sm font-semibold">💼 3 ans d’expérience</span>
-                </div>
+                {/* <div className="flex justify-center gap-x-4 mb-10">
+                    <p className=" px-6 py-3 rounded-lg font-medium">📍Basée à Nancy, France</p>
+                    
+                </div> */}
 
                 {/* CTA vers CV */}
                 <Link
                     to="/cv"
-                    className="inline-block bg-primary text-peony px-6 py-3 rounded-full font-medium hover:bg-primary/80 transition mb-16"
+                    className="inline-block font-sans italic font-bold px-4 py-3 mb-16"
                 >
                     En savoir plus sur mon profil →
                 </Link>
             </div>
             {/* Liste horizontale de projets */}
-            <div className="">
-                <h2 className="px-10 text-3xl font-serif italic font-semibold text-primary mb-6">Quelques projets récents</h2>
-                <div className="2xl:text-lg px-16 grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center mb-16">
-                    {featuredProjects.map((p, i) => (
-                        <ProjectCard key={i} {...p} />
-                    ))}
-                </div>
+            <div className="mx-6 flex flex-row gap-5 items-center mb-6">
+                <Flower className="w-8 h-8 animate-spin-slow" />
+                <h2 className="text-2xl md:text-3xl font-serif font-black ">Quelques projets récents</h2>
+            </div>
+            <div className="2xl:text-lg px-16 grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center mb-16">
+                {featuredProjects.map((p, i) => (
+                    <ProjectCard key={i} {...p} />
+                ))}
             </div>
 
             {/* CTA Contact */}
-            <div className="text-center mt-16">
+            <div className="text-center pt-20">
                 <p className="text-lg font-medium mb-4">✨ Envie de collaborer ou d’échanger ?</p>
                 <div className="flex justify-center gap-6 mb-4">
-                    <a href="mailto:tonemail@example.com" className="text-accent hover:underline">julia.crapanzano@gmail.com</a>
-                    <a href="https://github.com/tonpseudo" className="text-white hover:text-peony">GitHub</a>
-                    <a href="https://www.linkedin.com/in/juliacrapanzano/" className="text-white hover:text-peony">LinkedIn</a>
+                    <a href="mailto:tonemail@example.com" className="text-white hover:underline hover:text-warm">julia.crapanzano@gmail.com</a>
+                    <a href="https://www.behance.net/juliacrapanzano1/" className="text-white hover:text-warm">Behance</a>
+                    <a href="https://www.linkedin.com/in/juliacrapanzano/" className="text-white hover:text-warm">LinkedIn</a>
                 </div>
-                <p className="text-peony">Entrons en contact 🤝</p>
+                <p className="text-warm">Entrons en contact 🤝</p>
             </div>
         </div>
     );
