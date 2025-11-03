@@ -2,7 +2,7 @@ import { ReactComponent as Flower } from '../assets/icons/flower.svg';
 
 export default function CV() {
     return (
-        <div className="max-w-[2400px] bg-warm text-cold font-sans px-12 md:px-24 py-16 pt-32">
+        <div className="max-w-[2400px] bg-espresso text-peony font-sans px-12 md:px-24 py-16 pt-32">
 
             <h1 className="text-4xl md:text-6xl font-black ">JULIA<br />CRAPANZANO</h1>
             <p className="text-md md:text-lg mb-8">
@@ -13,7 +13,7 @@ export default function CV() {
                 <a
                     href="/files/CRAPANZANO_J_UXUI.pdf"
                     download
-                    className=" border-2 border-cold px-6 py-3 rounded-lg font-bold hover:bg-cold hover:border-cold hover:text-warm transition"
+                    className=" border-2 text-peony border-peony px-6 py-3 rounded-lg font-bold hover:bg-peony hover:text-espresso transition"
                 >
                     Télécharger mon CV
                 </a>
@@ -21,7 +21,7 @@ export default function CV() {
 
             <section className="mb-12 ">
                 <div className="flex flex-row gap-4 mb-3">
-                    <Flower className="w-8 h-8 text-cold animate-spin-slow" />
+                    <Flower className="w-8 h-8 animate-spin-slow" />
                     {/* <h2 className="text-5xl font-black text-primary ">EDUCATION</h2> */}
                     <h2 className="text-4xl font-serif font-black ">Formation</h2>
                 </div>
@@ -35,7 +35,7 @@ export default function CV() {
 
             <section className="mb-12">
                 <div className="flex flex-row gap-4 mb-3">
-                    <Flower className="w-8 h-8 text-cold animate-spin-slow" />
+                    <Flower className="w-8 h-8  animate-spin-slow" />
                     <h2 className="text-4xl font-serif font-black mb-3">Expériences</h2>
                 </div>
                 <div className="px-12">
@@ -55,7 +55,7 @@ export default function CV() {
 
             <section className="mb-12">
                 <div className="flex flex-row gap-4 mb-6">
-                    <Flower className="w-8 h-8 text-cold animate-spin-slow" />
+                    <Flower className="w-8 h-8  animate-spin-slow" />
                     <h2 className="text-4xl font-serif font-black mb-3">Compétences</h2>
                 </div>
                 <div className="flex flex-row gap-5 md:gap-8 mb-6">

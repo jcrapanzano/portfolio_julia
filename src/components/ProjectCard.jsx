@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function ProjectCard({ id, title, description, tech }) {
+export default function ProjectCard({ id, title, baseline, tech, image }) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -9,14 +9,14 @@ export default function ProjectCard({ id, title, description, tech }) {
       to={`/project/${id}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className={`block border-2 border-warm shadow-md rounded-2xl p-6 transform transition-all duration-300 ease-out 
-        ${hovered ? "scale-105 shadow-xl bg-warm text-cold " : "text-warm scale-100 shadow-md"}`}
+      className={`block border-2 border-espresso shadow-md rounded-2xl p-6 transform transition-all duration-300 ease-out 
+        ${hovered ? "scale-105 shadow-xl bg-espresso text-peony " : "text-espresso bg-pinky scale-100 shadow-md"}`}
     >
       {/* Contenu principal */}
       <div className="flex flex-col justify-between h-full">
         <div>
-          <h3 className="text-xl italic font-bold mb-2">{title}</h3>
-          <p className="2xl:text-lg mb-4">{description}</p>
+          <h3 className="text-xl font-bold mb-2">{title}</h3>
+          <p className="2xl:text-lg italic mb-4">{baseline}</p>
         </div>
 
         {/* Tags */}
@@ -25,7 +25,7 @@ export default function ProjectCard({ id, title, description, tech }) {
             {tech.map((t) => (
               <span
                 key={t}
-                className="bg-peony text-warm px-3 py-1 rounded-md text-sm"
+                className="bg-peony text-warm font-semibold px-3 py-1 rounded-md text-sm"
               >
                 {t}
               </span>

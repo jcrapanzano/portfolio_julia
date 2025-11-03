@@ -6,31 +6,31 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const inactiveColor = {
-    "/": "text-pinky hover:text-peony",      // Page d'accueil
-    "/projects": "text-pinky hover:text-peony", // Page projets
-    "/cv": "text-cold hover:text-peony",     // Page CV
+    "/": "text-white hover:text-warm",      // Page d'accueil
+    "/projects": "text-white hover:text-warm", // Page projets
+    "/cv": "text-white hover:text-warm",     // Page CV
   };
 
   const activeColor = {
     "/": "text-warm border-b-2 border-warm",      // Page d'accueil
     "/projects": "text-warm border-b-2 border-warm", // Page projets
-    "/cv": "text-pinky border-b-2 border-pinky",  
+    "/cv": "text-warm border-b-2 border-warm",  
   }
 
   const logoColor = {
-    "/": "text-warm",      // Page d'accueil
-    "/projects": "text-warm", // Page projets
-    "/cv": "text-cold",  
+    "/": "text-espresso",      // Page d'accueil
+    "/projects": "text-espresso", // Page projets
+    "/cv": "text-peony",  
   }
 
   const currentLogoColor = 
-    logoColor[location.pathname] || "text-warm";
+    logoColor[location.pathname] || "text-espresso";
 
   const currentInactiveColor =
-    inactiveColor[location.pathname] || "text-green-700 hover:text-pinky";
+    inactiveColor[location.pathname] || "text-white hover:text-warm";
 
   const currentActiveColor =
-    activeColor[location.pathname] || "text-green-700 hover:text-pinky";
+    activeColor[location.pathname] || "text-white hover:text-warm";
   
 
   const linkClass = (path) =>

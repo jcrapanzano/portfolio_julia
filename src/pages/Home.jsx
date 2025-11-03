@@ -30,10 +30,9 @@ export default function Home() {
             <div className="text-center mt-20">
                 {/* Nom et poste */}
                 <h1 className="text-4xl font-sans italic font-black md:text-6xl ">JULIA CRAPANZANO</h1>
-                <h1 className="text-3xl font-serif italic font-extralight mb-3 md:text-5xl">— UX/UI DESIGNER</h1>
+                <h1 className="text-3xl font-serif italic font-extralight mb-8 md:text-5xl">— UX/UI DESIGNER</h1>
                 <p className="font-sans font-semibold text-md max-w-2xl mx-auto mb-6 md:text-lg">
-                    Je conçois des expériences digitales intuitives et esthétiques, centrées sur l’utilisateur.
-                    Passionnée par le design fonctionnel et le détail, j’aime transformer les idées en interfaces claires et élégantes.
+                    Donner vie à des projets qui ont du sens, à travers des interfaces intuitives, esthétiques et accessibles à tous.
                 </p>
 
                 {/* Tags */}
