@@ -13,6 +13,7 @@ module.exports = {
             vanilla:'#FFFFF0',
             warm :'#C78283',
             cold :'#f3d9dc',
+            homiz:'#e3eff6',
 
         },
         fontFamily:{

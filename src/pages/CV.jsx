@@ -2,12 +2,15 @@ import { ReactComponent as Flower } from '../assets/icons/flower.svg';
 
 export default function CV() {
     return (
-        <div className="max-w-[2400px] bg-espresso text-peony font-sans px-12 md:px-24 py-16 pt-32">
+        <div className="max-w-[2400px] bg-espresso text-peony font-sans px-8 md:px-20 py-16 pt-32">
 
             <h1 className="text-4xl md:text-6xl font-black ">JULIA<br />CRAPANZANO</h1>
             <p className="text-md md:text-lg mb-8">
                 {/* UX/UI Designer with a Master's degree in Cognitive Science, with 3 years of experience, including 2 years working on B2C and B2B e-commerce products. Profile combining user-centered design and understanding of web development. */}
                 UX/UI Designer titulaire d'un master en Sciences Cognitives, avec 3 années d'expériences dont 2 ans sur des produits e-commerce b2c et b2b. Profil aliant conception centrée utilisateurs et développement web.
+                <br /><br />🧠Mon arme ? Les sciences cognitives : charge mentale, perception, décision.
+                <br />🎨 Mon terrain de jeu ? Le produit : impact, itération, résultats.<br />⚡ Je transforme la complexité en flows simples,
+                que je build souvent avec React et prototype sur Figma.<br />💬 Penser l’expérience et la produire, pour créer des produits qui comptent et qui performent.
             </p>
             <div className="mb-20">
                 <a
@@ -20,12 +23,12 @@ export default function CV() {
             </div>
 
             <section className="mb-12 ">
-                <div className="flex flex-row gap-4 mb-3">
+                <div className="flex flex-row gap-4 mb-8">
                     <Flower className="w-8 h-8 animate-spin-slow" />
                     {/* <h2 className="text-5xl font-black text-primary ">EDUCATION</h2> */}
                     <h2 className="text-4xl font-serif font-black ">Formation</h2>
                 </div>
-                <div className="mx-12 text-md md:text-lg">
+                <div className=" md:px-12 text-md md:text-lg">
                     {/* <p>Master's degree in Cognitives Sciences at IDMC in Nancy.<br />
                         — Psychology, HCI, Ergonimics, Web Development, Project Managment.</p> */}
                     <p>Master en Sciences Cognitives à l'IDMC de Nancy.<br />
@@ -36,9 +39,9 @@ export default function CV() {
             <section className="mb-12">
                 <div className="flex flex-row gap-4 mb-3">
                     <Flower className="w-8 h-8  animate-spin-slow" />
-                    <h2 className="text-4xl font-serif font-black mb-3">Expériences</h2>
+                    <h2 className="text-4xl font-serif font-black mb-8">Expériences</h2>
                 </div>
-                <div className="px-12">
+                <div className="md:px-12">
                     {/* <h3 className="text-xl font-semibold">UX/UI Designer & Web Developper</h3> */}
                     <h3 className="text-xl font-bold">UX/UI Designer & Développeur web</h3>
                     {/* <p>Lead end-to-end design process for both b2c and b2b e-commerce product.</p>
@@ -56,10 +59,10 @@ export default function CV() {
             <section className="mb-12">
                 <div className="flex flex-row gap-4 mb-6">
                     <Flower className="w-8 h-8  animate-spin-slow" />
-                    <h2 className="text-4xl font-serif font-black mb-3">Compétences</h2>
+                    <h2 className="text-4xl font-serif font-black mb-8">Compétences</h2>
                 </div>
                 <div className="flex flex-row gap-5 md:gap-8 mb-6">
-                    <h2 className="pl-12 text-3xl font-extrabold" >DESIGN</h2>
+                    <h2 className="md:pl-12 text-2xl md:text-3xl font-extrabold" >DESIGN</h2>
                     <ul className="text-lg font-semibold pl-20 flex flex-wrap gap-x-8 gap-y-3">
                         {/* <li>User research</li>
                         <li>Design Thinking</li>
@@ -78,7 +81,7 @@ export default function CV() {
                     </ul>
                 </div>
                 <div className="flex flex-row gap-20 md:gap-8 mb-6">
-                    <h2 className="pl-12 text-3xl font-extrabold" >FRONT-END</h2>
+                    <h2 className="md:pl-12 text-2xl md:text-3xl font-extrabold" >FRONT-END</h2>
                     <ul className="text-lg font-semibold pl-4 flex flex-wrap gap-x-8 gap-y-3">
                         <li>HTML</li>
                         <li>CSS</li>

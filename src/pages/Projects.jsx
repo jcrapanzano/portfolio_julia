@@ -36,9 +36,9 @@ import projectsData from "../data/projectsData";
 
 export default function Projects() {
   return (
-    <div className="max-w-[2400px] px-6 py-16 pt-32">
-      <h1 className="px-10 text-3xl font-serif font-black mb-4">Mes projets</h1>
-      <div className="grid md:grid-cols-3 gap-6 px-16">
+    <div className="max-w-[2400px] mx-2 px-4 md:px-16 py-16 pt-32">
+      <h1 className= "text-3xl font-serif font-black mb-8">Mes projets</h1>
+      <div className="grid px-4 md:px-16 md:grid-cols-3 gap-6 ">
         {projectsData.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

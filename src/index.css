@@ -33,3 +33,13 @@ code {
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-out;
 }
+
+.custom-list {
+  list-style-image: url('../src/assets/icons/flower.svg');
+  padding-left: 1.5rem; /* pour éviter que le texte colle aux icônes */
+  
+}
+
+.custom-list li {
+  margin-bottom: 0.5rem;
+}

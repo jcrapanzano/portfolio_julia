@@ -6,8 +6,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const inactiveColor = {
-    "/": "text-white hover:text-warm",      // Page d'accueil
-    "/projects": "text-white hover:text-warm", // Page projets
+    "/": "text-peony hover:text-warm",      // Page d'accueil
+    "/projects": "text-peony hover:text-warm", // Page projets
+    // "/project/": "text-peony hover:text-warm",
     "/cv": "text-white hover:text-warm",     // Page CV
   };
 
@@ -27,10 +28,10 @@ export default function Navbar() {
     logoColor[location.pathname] || "text-espresso";
 
   const currentInactiveColor =
-    inactiveColor[location.pathname] || "text-white hover:text-warm";
+    inactiveColor[location.pathname] || "text-peony hover:text-warm";
 
   const currentActiveColor =
-    activeColor[location.pathname] || "text-white hover:text-warm";
+    activeColor[location.pathname] || "text-peony hover:text-warm";
   
 
   const linkClass = (path) =>
@@ -79,14 +80,14 @@ export default function Navbar() {
             
             {/* Bouton fermer */}
             <button
-              className="absolute top-auto right-12 text-3xl focus:outline-none text-cold"
+              className="absolute top-auto right-12 text-3xl focus:outline-none text-white"
               onClick={() => setIsOpen(false)}
             >
               ✕
             </button>
 
             {/* Liens du menu */}
-            <nav className="flex flex-col space-y-6 mt-16 text-cold font-sans">
+            <nav className="flex flex-col space-y-6 mt-16 text-white font-sans">
               <Link to="/" className={linkClass("/")} onClick={() => setIsOpen(false)}>
                 Accueil
               </Link>
