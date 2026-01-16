@@ -2,7 +2,7 @@ import { ReactComponent as Flower } from '../assets/icons/flower.svg';
 
 export default function CV() {
     return (
-        <div className="max-w-[2400px] bg-espresso text-peony font-sans px-8 md:px-20 py-16 pt-32">
+        <div className="max-w-[2400px] bg-espresso text-pinky font-sans px-8 md:px-20 py-16 pt-32">
 
             <h1 className="text-4xl md:text-6xl font-black ">JULIA<br />CRAPANZANO</h1>
             <p className="text-md md:text-lg mb-8">
@@ -14,9 +14,9 @@ export default function CV() {
             </p>
             <div className="mb-20">
                 <a
-                    href="/files/CRAPANZANO_J_UXUI.pdf"
+                    href="/files/JCRAPANZANO_UXProduit_CV.pdf"
                     download
-                    className=" border-2 text-peony border-peony px-6 py-3 rounded-lg font-bold hover:bg-peony hover:text-espresso transition"
+                    className=" border-2 text-pinky border-pinky px-6 py-3 rounded-lg font-bold hover:bg-accent hover:text-pinky hover:border-accent transition"
                 >
                     Télécharger mon CV
                 </a>
@@ -47,12 +47,12 @@ export default function CV() {
                     {/* <p>Lead end-to-end design process for both b2c and b2b e-commerce product.</p>
                     <p>2 years of Work-Study Program + Permanent Contract.</p> */}
                     <p className="text-md md:text-lg">Conception UX et développement front-end pour des plateformes e-commerce b2c/b2b. Mise en place d’une approche centrée utilisateur : recherche, prototypage et tests d’utilisabilité pour aligner les produits sur les besoins réels des utilisateurs. Intégration d’un système de recommandation avec fonctionnalités d’explicabilité, renforçant l’engagement et la confiance des utilisateurs envers la plateforme.</p>
-                    <p className="italic">Alternance de 2 ans + CDI.</p>
+                    <p className="italic">— Alternance de 2 ans + CDI.</p>
                     {/* <h3 className="text-xl font-semibold mt-3">Data Analyst for Internal Audit Intern</h3> */}
                     <h3 className="text-xl font-bold mt-3">Analyste de données pour l'audit interne</h3>
                     {/* <p>Data visualisation tools. Monitoring and prediction for audit. International team.</p> */}
                     <p className="text-md md:text-lg">Visualisation de données sensibles et confidentielles. Surveillance et prévision pour l'audit. <br /> Collaboration dans une équipe internationale </p>
-                    <p className="italic">Stage de fin d'étude de licence.</p>
+                    <p className="italic">— Stage de fin d'étude de licence.</p>
                 </div>
             </section>
 
@@ -107,10 +107,10 @@ export default function CV() {
             </section>
 
             <section className="pt-8 text-center">
-                <p className="mb-4">📧 <a href="mailto:julia.crapanzano@gmail.com" className="text-accent hover:underline">julia.crapanzano@gmail.com</a></p>
+                <p className="mb-4">📧 <a href="mailto:julia.crapanzano@gmail.com" className="text-pinky hover:text-accent hover:underline">julia.crapanzano@gmail.com</a></p>
                 <div className="flex justify-center gap-4">
-                    <a href="https://www.behance.net/juliacrapanzano1" target="_blank" rel="noopener noreferrer" className="text-white hover:text-peony">Behance</a>
-                    <a href="https://www.linkedin.com/in/juliacrapanzano/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-peony">LinkedIn</a>
+                    <a href="https://www.behance.net/juliacrapanzano1" target="_blank" rel="noopener noreferrer" className="text-pinky hover:text-accent hover:underline">Behance</a>
+                    <a href="https://www.linkedin.com/in/juliacrapanzano/" target="_blank" rel="noopener noreferrer" className="text-pinky hover:text-accent hover:underline" >LinkedIn</a>
                 </div>
             </section>
         </div>

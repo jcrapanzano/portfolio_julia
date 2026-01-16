@@ -11,7 +11,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 function App() {
   return (
     <Router basename='/portfolio_julia'>
-      <div className="flex flex-col min-h-screen bg-white text-espresso">
+      <div className="flex flex-col min-h-screen bg-pinky text-espresso">
         <Navbar />
         <main className="flex-grow">
           <Routes>

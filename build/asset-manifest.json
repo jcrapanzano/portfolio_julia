@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_julia/static/css/main.025a9c9c.css",
-    "main.js": "/portfolio_julia/static/js/main.877d96e2.js",
+    "main.css": "/portfolio_julia/static/css/main.6cd20413.css",
+    "main.js": "/portfolio_julia/static/js/main.e9b5bddd.js",
     "static/js/453.e00995e3.chunk.js": "/portfolio_julia/static/js/453.e00995e3.chunk.js",
     "static/media/swipely6.jpg": "/portfolio_julia/static/media/swipely6.24192164c9ff8d8c9434.jpg",
     "static/media/swipely4.jpg": "/portfolio_julia/static/media/swipely4.8f35ad38e0ba1981d776.jpg",
@@ -9,20 +9,17 @@
     "static/media/swipely1.jpg": "/portfolio_julia/static/media/swipely1.5722f2c59964392d2f0b.jpg",
     "static/media/swipely5.jpg": "/portfolio_julia/static/media/swipely5.1fa5ad04606eaafc6ac4.jpg",
     "static/media/HOMIZ2.png": "/portfolio_julia/static/media/HOMIZ2.640ad29a8ece311ada13.png",
-    "static/media/swipe_test.png": "/portfolio_julia/static/media/swipe_test.fe0fed6049b92429c1fb.png",
-    "static/media/product_details.png": "/portfolio_julia/static/media/product_details.eef45b99d63e6dde2c48.png",
     "static/media/planche_homiz.jpg": "/portfolio_julia/static/media/planche_homiz.1b4f41e46024c791e3aa.jpg",
-    "static/media/interest.png": "/portfolio_julia/static/media/interest.c701e734c428f6a9469b.png",
     "static/media/homiz_pres.jpg": "/portfolio_julia/static/media/homiz_pres.6daca2080d86cbf2f4ac.jpg",
     "static/media/logo.svg": "/portfolio_julia/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/flower.svg": "/portfolio_julia/static/media/flower.9f22ccdf99127221e2f2c2b4dcb2a973.svg",
     "index.html": "/portfolio_julia/index.html",
-    "main.025a9c9c.css.map": "/portfolio_julia/static/css/main.025a9c9c.css.map",
-    "main.877d96e2.js.map": "/portfolio_julia/static/js/main.877d96e2.js.map",
+    "main.6cd20413.css.map": "/portfolio_julia/static/css/main.6cd20413.css.map",
+    "main.e9b5bddd.js.map": "/portfolio_julia/static/js/main.e9b5bddd.js.map",
     "453.e00995e3.chunk.js.map": "/portfolio_julia/static/js/453.e00995e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.025a9c9c.css",
-    "static/js/main.877d96e2.js"
+    "static/css/main.6cd20413.css",
+    "static/js/main.e9b5bddd.js"
   ]
 }

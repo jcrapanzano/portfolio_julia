@@ -55,10 +55,6 @@ export default function ProjectDetail() {
                 className="w-full h-1080 rounded-xl mb-12"
             />
 
-            {/* <h1 className="text-xl md:text-2xl font-bold mb-4">{project.description}</h1> */}
-            {/* <p className="md:text-lg mb-12">{project.intro}</p> */}
-            {/* <h1 className="text-lg md:text-2xl font-bold mb-4 border- border-b-2 border-espresso">Contexte</h1> */}
-            {/* <p className="md:text-lg mb-12">{project.contexte}</p> */}
             <AccordionSection title="Contexte">
                 <p>{project.contexte}</p>
             </AccordionSection>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function ProjectCard({ slug, title, baseline, tech, description }) {
+export default function ProjectCard({ slug, title, baseline, tagColor, image, tech, description }) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -9,38 +9,44 @@ export default function ProjectCard({ slug, title, baseline, tech, description }
       to={`/project/${slug}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className={`block border-2 border-espresso shadow-md rounded-2xl pt-4 pb-2 px-6 transform transition-all duration-300 ease-out 
-        ${hovered ? "scale-105 shadow-xl bg-espresso text-peony " : "text-espresso bg-pinky scale-100 shadow-md"}`}
+      className={`block border-2 bg-white text-espresso border-espresso shadow-md py-4 px-4 transform transition-all duration-300 ease-out 
+        ${hovered ? "scale-105 shadow-xl   " : "scale-100 shadow-md"}`}
     >
       {/* Contenu principal */}
       <div className="flex flex-col justify-between h-full">
         <div>
-          <h3 className="text-xl font-bold mb-2">{title}</h3>
-          <p className="2xl:text-lg italic mb-2">{baseline}</p>
-          <p className="2xl:text-lg font-semibold mb-4">{description}</p>
+          <img
+            src={image[2]}
+            alt={"Contenu à venir."}
+            className=""
+          />
+          <h3 className="text-xl font-bold">{title}</h3>
+          {/* <p className="2xl:text-lg italic mb-2">{baseline}</p> */}
+          {/* <p className="2xl:text-lg font-semibold mb-4">{description}</p> */}
         </div>
 
         {/* Tags */}
         <div>
-          <div className="flex flex-wrap gap-2 mb-2">
-            {tech.map((t) => (
+          <div className="flex flex-wrap gap-2 my-2">
+          {tech.map((t) => (
               <span
                 key={t}
-                className="bg-peony text-warm font-semibold px-3 py-1 rounded-md text-sm"
+                style={{ backgroundColor: tagColor }}
+                className="bg-white text-white border-1 border-espresso font-semibold px-3 py-1 rounded-md text-xs"
               >
                 {t}
               </span>
-            ))}
+            ))} 
           </div>
 
           {/* Bouton “Voir le projet →” (apparait uniquement au hover) */}
-          <p
-            className={`text-cold text-center font-bold transition-opacity duration-300 ${
-              hovered ? "opacity-100" : "opacity-0"
-            }`}
+          {/* <div
+            className={`text-white transition-opacity duration-300 ${hovered ? "opacity-100" : "opacity-0"
+              }`}
           >
-            →
-          </p>
+            <p className="2xl:text-lg italic mb-2">{baseline}</p>
+            <p className="2xl:text-lg font-semibold mb-4">{description}</p>
+          </div> */}
         </div>
       </div>
     </Link>

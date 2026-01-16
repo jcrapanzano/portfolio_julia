@@ -44,13 +44,14 @@ export default function Home() {
 
 
     return (
-        <div className="max-w-[2400px] mx-2 py-20 ">
-            <div className="justify-items-center text-center  mt-20">
-                {/* Nom et poste */}
+        <div className="max-w-[2400px] mx-2 py-20 bg-pinky">
+            {/* HEADER Nom et poste */}
+            <div className="justify-items-center text-center text-espresso mt-20">
+
                 <h1 className="text-4xl font-sans italic font-black md:text-6xl ">JULIA CRAPANZANO</h1>
                 <h1 key={currentRole} className="text-3xl font-serif italic font-extralight mb-8 md:text-5xl transition-opacity duration-700 ease-in-out opacity-100">— {roles[currentRole]}</h1>
                 <p className="font-sans font-semibold text-md max-w-2xl mb-6 md:text-lg">
-                    Je suis designer UX/UI et développeuse front-end. Je crée des interfaces que je peux designer et coder, sans perdre l’humain de vue.                </p>
+                    Je suis designer UX/UI formée en Sciences Cognitives. Je crée des interfaces que je peux designer et coder, sans perdre l’humain de vue. Mon objectif est de créer des produits qui comptent et qui performent.             </p>
 
                 {/* Tags */}
                 {/* <div className="flex justify-center gap-x-4 mb-10">
@@ -63,31 +64,34 @@ export default function Home() {
                     to="/cv"
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
-                    className={`${hovered ? "scale-105 shadow-lg bg-espresso text-white " : "text-white bg-warm scale-100 shadow-md"} rounded-xl inline-block font-sans italic font-semibold duration-200 px-4 py-3 mb-16`}
+                    className={`${hovered ? "scale-105 shadow-lg border-accent text-accent bg-white border-2 " : "text-white bg-accent scale-100 shadow-md"} rounded-xl inline-block font-sans italic font-semibold duration-200 px-4 py-3 mb-16`}
                 >
                     En savoir plus sur mon profil →
                 </Link>
             </div>
-            {/* Liste horizontale de projets */}
-            <div className=" px-4 md:px-16 flex flex-row gap-5 items-center mb-8">
-                <Flower className="w-8 h-8 animate-spin-slow" />
-                <h2 className="text-2xl md:text-3xl font-serif font-black ">Quelques projets récents</h2>
-            </div>
-            <div className="2xl:text-lg px-4 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-6 justify-center mb-16">
-                {projectsData.map((p, i) => (
-                    <ProjectCard key={i} {...p} />
-                ))}
+            {/* BLOC 1 Liste horizontale de projets */}
+            <div>
+                <div className=" px-4 md:px-16 flex flex-row gap-5 items-center mb-8">
+                    <Flower className="w-8 h-8 animate-spin-slow text-espresso" />
+                    <h2 className="text-2xl md:text-3xl font-serif font-black text-espresso">Quelques projets récents</h2>
+                </div>
+                <div className="2xl:text-lg px-4 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-6 justify-center mb-16">
+                    {projectsData.map((p, i) => (
+                        <ProjectCard key={i} {...p} />
+                    ))}
+                </div>
+                
             </div>
 
-            {/* CTA Contact */}
+            {/* BLOC CTA Contact */}
             <div className="text-center pt-20">
-                <p className="text-lg font-medium mb-4">✨ Envie de collaborer ou d’échanger ?</p>
-                <div className=" flex flex-wrap px-24 justify-center gap-x-6 gap-y-3 mb-4">
-                    <a href="mailto:tonemail@example.com" className="text-peony hover:underline hover:text-warm">julia.crapanzano@gmail.com</a>
-                    <a href="https://www.behance.net/juliacrapanzano1/" className="text-peony hover:text-warm">Behance</a>
-                    <a href="https://www.linkedin.com/in/juliacrapanzano/" className="text-peony hover:text-warm">LinkedIn</a>
+                <p className="text-lg text-espresso font-medium mb-4">✨ Envie de collaborer ou d’échanger ?</p>
+                <div className=" flex flex-wrap px-24 justify-center gap-x-6 gap-y-3 mb-4 font-normal">
+                    <a href="mailto:tonemail@example.com" className="text-accent hover:underline hover:text-espresso">julia.crapanzano@gmail.com</a>
+                    <a href="https://www.behance.net/juliacrapanzano1/" className="text-accent hover:text-espresso hover:underline">Behance</a>
+                    <a href="https://www.linkedin.com/in/juliacrapanzano/" className="text-accent hover:text-espresso hover:underline">LinkedIn</a>
                 </div>
-                <p className=" pb-4">Entrons en contact 🤝</p>
+                <p className="text-espresso pb-4">Entrons en contact 🤝</p>
             </div>
         </div>
     );

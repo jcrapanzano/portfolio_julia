@@ -21,7 +21,7 @@ export default function Navbar() {
   const logoColor = {
     "/": "text-espresso",      // Page d'accueil
     "/projects": "text-espresso", // Page projets
-    "/cv": "text-peony",  
+    "/cv": "text-soft",  
   }
 
   const currentLogoColor = 
@@ -49,11 +49,11 @@ export default function Navbar() {
         <Link to="/" className={`text-5xl 2xl:text-6xl font-serif italic font-semibold leading-none ${currentLogoColor}`}>
           z
         </Link>
-        <div className="hidden items-center sm:flex font-sans 2xl:text-xl space-x-4 2xl:space-x-6">
+        {/* <div className="hidden items-center sm:flex font-sans 2xl:text-xl space-x-4 2xl:space-x-6">
           <Link to="/" className={linkClass("/")}>Accueil</Link>
           <Link to="/projects" className={linkClass("/projects")}>Projets</Link>
           <Link to="/cv" className={linkClass("/cv")}>CV</Link>
-        </div>
+        </div> */}
 
         {/* Bouton hamburger pour mobile*/}
         {/* <div className="sm:hidden ">
@@ -63,22 +63,22 @@ export default function Navbar() {
           </button>
         </div> */}
         {/* Bouton mobile */}
-        <div className="sm:hidden">
+        {/* <div className="sm:hidden">
           <button
             className={`focus:outline-none text-3xl ${currentLogoColor}`}
             onClick={() => setIsOpen(true)}
           >
             ☰
           </button>
-        </div>
+        </div> */}
       </div>
 
     </nav>
-      {isOpen && (
+      {/* {isOpen && (
         <div className="fixed text-cold inset-0 bg-peony/10 backdrop-blur-sm z-[60] flex justify-end transition-opacity duration-300">
           <div className="bg-warm w-2/3 max-w-xs h-full shadow-xl p-6 flex flex-col justify-between animate-slideInRight relative">
             
-            {/* Bouton fermer */}
+            {/* Bouton fermer 
             <button
               className="absolute top-auto right-12 text-3xl focus:outline-none text-white"
               onClick={() => setIsOpen(false)}
@@ -86,7 +86,7 @@ export default function Navbar() {
               ✕
             </button>
 
-            {/* Liens du menu */}
+            {/* Liens du menu 
             <nav className="flex flex-col space-y-6 mt-16 text-white font-sans">
               <Link to="/" className={linkClass("/")} onClick={() => setIsOpen(false)}>
                 Accueil
@@ -99,7 +99,7 @@ export default function Navbar() {
               </Link>
             </nav>
 
-            {/* Réseaux sociaux */}
+            {/* Réseaux sociaux 
             {/* <div className="mt-auto border-t border-pinky/20 pt-4 text-pinky text-sm">
               <p>Retrouve-moi sur :</p>
               <div className="flex gap-3 mt-2">
@@ -107,11 +107,11 @@ export default function Navbar() {
                 <a href="https://dribbble.com" target="_blank" rel="noreferrer">Dribbble</a>
                 <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
-      )}
-    </>
+      )}*/}
+    </> 
 
   );
 }

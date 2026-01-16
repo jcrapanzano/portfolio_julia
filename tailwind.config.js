@@ -14,6 +14,10 @@ module.exports = {
             warm :'#C78283',
             cold :'#f3d9dc',
             homiz:'#e3eff6',
+            bg:'#F2F2F2',
+            text:'#733822',
+            accent:'#D34F73',
+            soft:'#FAE1DF'
 
         },
         fontFamily:{
